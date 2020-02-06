@@ -178,7 +178,7 @@ class _PeopleState extends State<People> {
                                     height: 16.0,
                                   ),
                                   Text(
-                                    'David Brian',
+                                    'club mate',
                                     style: TextStyle(
                                         fontSize: 15.0,
                                         fontWeight: FontWeight.bold),
@@ -187,7 +187,7 @@ class _PeopleState extends State<People> {
                                     height: 8.0,
                                   ),
                                   Text(
-                                    'Sun, 20 Jun   12:00 AM',
+                                    '0,5| pro Flashe',
                                     style: TextStyle(
                                       color: Colors.black54,
                                     ),
@@ -196,59 +196,62 @@ class _PeopleState extends State<People> {
                                     height: 8.0,
                                   ),
                                   Text(
-                                    '10m 42s',
+                                    'euro 1.50',
                                     style: TextStyle(
-                                      color: Colors.black54,
+                                      color: Colors.black,
+                                      backgroundColor: Colors.grey
                                     ),
                                   ),
                                   SizedBox(
                                     height: 1.0,
                                   ),
-                                  Row(
-                                    children: <Widget>[
-                                      Expanded(
-                                        flex: 2,
-                                        child: Text(
-                                          'By: ${_dataList[position]}     ',
-                                          style: TextStyle(
-                                              color: Colors.lightBlue),
-                                        ),
-                                      ),
-                                      Expanded(
-                                        flex: 1,
-                                        child: Container(
-                                          height: 34.0,
-                                          alignment: Alignment.center,
-                                          margin: EdgeInsets.only(right: 16),
-                                          decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(16.0),
-                                            color: Colors.black12,
-                                          ),
-                                          child: Icon(
-                                            Icons.phone,
-                                            color: Colors.lightBlue,
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 70.0),
+                                    child: Row(
+                                      children: <Widget>[
+
+                                        Expanded(
+                                          flex: 1,
+                                          child: Container(
+                                            height: 34.0,
+                                            alignment: Alignment.center,
+                                            margin: EdgeInsets.only(right: 16),
+                                            decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(16.0),
+                                              color: Colors.black12,
+                                            ),
+                                         //   child:Image(image: ImageProvider('images/minus.png'))
                                           ),
                                         ),
-                                      ),
-                                      Expanded(
-                                        flex: 1,
-                                        child: Container(
-                                          height: 34.0,
-                                          alignment: Alignment.center,
-                                          margin: EdgeInsets.only(right: 16),
-                                          decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(16.0),
-                                            color: Colors.black12,
-                                          ),
-                                          child: Icon(
-                                            Icons.message,
-                                            color: Colors.lightBlue,
+                                        Padding(
+                                          padding: const EdgeInsets.only(right: 15.0),
+                                          child: Text(
+                                            '10',
+                                            style: TextStyle(
+                                              color: Colors.black54,
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                    ],
+                                        Expanded(
+                                          flex: 1,
+                                          child: Container(
+                                            height: 34.0,
+                                            alignment: Alignment.center,
+                                            margin: EdgeInsets.only(right: 16),
+                                            decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(16.0),
+                                              color: Colors.black12,
+                                            ),
+                                            child: Icon(
+                                              Icons.add,
+                                              color: Colors.lightBlue,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ],
                               ),
@@ -261,7 +264,42 @@ class _PeopleState extends State<People> {
                   },
                 ),
               ),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 40.0),
+                child: Container(
+                  child: Row(
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10.0,left: 20.0),
+                        child: Container(
+                          height: 50,
+                          width: 100.0,
+                          decoration: BoxDecoration(color: Colors.lime),
+                          child: RaisedButton(
+                                   child: Text('Euro 15.0'),
+
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10.0,left: 20.0),
+                        child: Container(
+                            decoration: BoxDecoration(color: Colors.lightGreen),
+                          height: 50.0,
+                            width: 200.0,
+                            child: RaisedButton(
+                              child: Text('Jetzt Bestlallen',style: TextStyle(
+                                fontSize: 15,
+                              ),),
+
+                            )),
+                      )
+                    ],
+                  ),
+                ),
+              ),
             ],
+
           ),
         ),
       ),
