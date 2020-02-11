@@ -136,17 +136,18 @@ class _PeopleState extends State<People> {
                   itemCount: _dataList.length,
                   itemBuilder: (context, position) {
                     return Container(
-                      decoration: BoxDecoration(
+                     /* decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(16.0),
 
 
-                      ),
+                      ),*/
                       margin: EdgeInsets.only(
                           left: 16.0, right: 16.0, top: 6.0, bottom: 10.0),
                       height: 140.0,
                       child: Card(
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(24.0),
+                         // borderRadius: BorderRadius.circular(24.0),
+
                         ),
                         child: Row(
                           children: <Widget>[
@@ -158,10 +159,9 @@ class _PeopleState extends State<People> {
                                     width: 140.0,
                                     margin: EdgeInsets.all(8.0),
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: Color(0xFFeeeeee),
                                       borderRadius: BorderRadius.circular(24.0),
-                                     // image: AssetImage('images/Ellipse.png'),
-
+                                      image: new DecorationImage(image: AssetImage('images/Ellipse.png'),fit:BoxFit.fill ),
                                     ),
 
                                   ),
@@ -180,7 +180,7 @@ class _PeopleState extends State<People> {
                                   Text(
                                     'club mate',
                                     style: TextStyle(
-                                        fontSize: 15.0,
+                                        fontSize: 20.0,
                                         fontWeight: FontWeight.bold),
                                   ),
                                   SizedBox(
@@ -193,13 +193,14 @@ class _PeopleState extends State<People> {
                                     ),
                                   ),
                                   SizedBox(
-                                    height: 8.0,
+                                    height: 10.0,
                                   ),
                                   Text(
                                     'euro 1.50',
                                     style: TextStyle(
                                       color: Colors.black,
-                                      backgroundColor: Colors.grey
+                                      backgroundColor: Color(0xFFeeeeee),
+                                      fontSize: 14
                                     ),
                                   ),
                                   SizedBox(
@@ -218,10 +219,13 @@ class _PeopleState extends State<People> {
                                             margin: EdgeInsets.only(right: 16),
                                             decoration: BoxDecoration(
                                               borderRadius:
-                                                  BorderRadius.circular(16.0),
-                                              color: Colors.black12,
+                                              BorderRadius.circular(16.0),
+                                              color: Color(0xFFeeeeee),
                                             ),
-                                         //   child:Image(image: ImageProvider('images/minus.png'))
+                                            child: Icon(
+                                              Icons.remove,
+                                              color: Color(0xFF006600),
+                                            ),
                                           ),
                                         ),
                                         Padding(
@@ -229,8 +233,8 @@ class _PeopleState extends State<People> {
                                           child: Text(
                                             '10',
                                             style: TextStyle(
-                                              color: Colors.black54,
-                                            ),
+                                                fontSize: 16.0, fontWeight: FontWeight.bold,
+                                                color: Color(0xFF006600)),
                                           ),
                                         ),
                                         Expanded(
@@ -242,11 +246,12 @@ class _PeopleState extends State<People> {
                                             decoration: BoxDecoration(
                                               borderRadius:
                                                   BorderRadius.circular(16.0),
-                                              color: Colors.black12,
+                                              color: Color(0xFFeeeeee),
+
                                             ),
                                             child: Icon(
                                               Icons.add,
-                                              color: Colors.lightBlue,
+                                                color: Color(0xFF006600),
                                             ),
                                           ),
                                         ),
@@ -274,9 +279,27 @@ class _PeopleState extends State<People> {
                         child: Container(
                           height: 50,
                           width: 100.0,
-                          decoration: BoxDecoration(color: Colors.lime),
-                          child: RaisedButton(
-                                   child: Text('Euro 15.0'),
+                          decoration: BoxDecoration(color: Color(0xFFeeeeee),),
+                          child: Container(
+                            height: 50,
+                            width: 100,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(16.0),
+                            ),
+                                   child: Padding(
+                                     padding: const EdgeInsets.only(top: 5),
+                                     child: Column(
+                                       children: <Widget>[
+                                         Text('Euro 15.0', style: TextStyle(
+                                             fontSize: 12.0, fontWeight: FontWeight.bold,
+                                             color: Colors.blueGrey),),
+
+                                         Text('Euro 15.0', style: TextStyle(
+                                             fontSize: 16.0, fontWeight: FontWeight.bold,
+                                             color: Color(0xFF006600)),),
+                                       ],
+                                     ),
+                                   ),
 
                           ),
                         ),
@@ -284,12 +307,13 @@ class _PeopleState extends State<People> {
                       Padding(
                         padding: const EdgeInsets.only(top: 10.0,left: 20.0),
                         child: Container(
-                            decoration: BoxDecoration(color: Colors.lightGreen),
+                            decoration: BoxDecoration(color: Colors.green),
                           height: 50.0,
                             width: 200.0,
                             child: RaisedButton(
                               child: Text('Jetzt Bestlallen',style: TextStyle(
                                 fontSize: 15,
+                                color: Colors.white
                               ),),
 
                             )),
