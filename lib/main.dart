@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_ui_project/People.dart';
+import 'package:new_ui_project/profile.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +14,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-       body: People(),
+       body: ProfileScreen(),
       ),
     );
   }
