@@ -201,13 +201,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             children: <Widget>[
                               Container(
                                 height: 140.0,
-                                width: 140.0,
+                                width: 100.0,
                                 margin: EdgeInsets.all(8.0),
                                 decoration: BoxDecoration(
                                   color: Color(0xFFeeeeee),
                                   shape: BoxShape.circle,
                                   //borderRadius: BorderRadius.circular(24.0),
-                                  image: new DecorationImage(image: AssetImage('images/pic.jpg'),fit:BoxFit.fill ),
+                                  image: new DecorationImage(image: AssetImage('images/pic.jpg'),fit: BoxFit.cover ),
                                 ),
 
                               ),
